@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framer - The Internet is Your Canvas</title>
+    <!-- Connects your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* --- Global Styles --- */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('bg.jfif');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* --- Navigation --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- Hero Section --- */
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 16px;
+    border-radius: 20px;
+    color: #4da3ff;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.subtext {
+    color: rgba(255, 255, 255, 0.7); /* Increased opacity for readability */
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+
+.btn-main {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Framer</div>
+        
+        <div class="nav-links">
+            <a href="#">Pricing</a>
+            <a href="#">Features</a>
+            <a href="#">Support</a>
+            <a href="#">Service</a>
+        </div>
+
+        <div class="nav-auth">
+            <span class="login">Login</span>
+            <button class="btn-blue">Start for free</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Introducing Framer Forms</span>
+            <h1 class="heading">The internet is your canvas.</h1>
+            <p class="subtext">Framer is where teams design and publish stunning sites.</p>
+            <button class="btn-main">Start your site</button>
+        </div>
+    </header>
+
+</body>
+</html>
